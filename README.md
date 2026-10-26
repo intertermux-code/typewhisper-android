@@ -6,11 +6,19 @@ and the words land in the app you were already in.
 It is a native Kotlin port of [TypeWhisper for Mac](https://github.com/TypeWhisper/typewhisper-mac).
 Not affiliated with them — see [Attribution](#attribution).
 
+## Completely free, no keys needed
+
+The default engine runs entirely on your phone — no account, no API key, no
+subscription. Install the APK, open the app, and download the speech model once
+over Wi-Fi (~32 MB). After that, dictation works fully offline, and your audio
+never leaves the device. Paid APIs (Groq, OpenAI) and the Mac relay are optional
+extras in Settings — setup finishes without any of them.
+
 ## What it does
 
 - **Runs fully on the phone.** whisper.cpp is compiled into the APK. The default
-  engine needs no account, no key, and no network; the audio never leaves the
-  device unless you point it at one of the remote engines.
+  engine needs no account, no key, and no network once its model is downloaded;
+  the audio never leaves the device unless you point it at one of the remote engines.
 - **A voice keyboard.** An input method you can select in any app, with a mic key
   that records and inserts the transcript straight into the field you were typing
   in — no clipboard round trip.
@@ -33,7 +41,7 @@ Not affiliated with them — see [Attribution](#attribution).
 
 ## Install
 
-**APK:** grab the latest release APK and install it.
+**APK:** grab the [latest release APK](https://github.com/intertermux-code/typewhisper-android/releases) and install it.
 The app needs Android 8.0 (API 26) or newer. There's no signing config in the
 repo — what's published is debug-built, and it isn't on the Play Store.
 
@@ -54,6 +62,13 @@ Toolchain: JDK 17, Android SDK 34, Gradle 8.7 (wrapper included). Building the
 on-device engine also needs NDK 26.3.11579264 and CMake 3.31.5 — both installable
 through Android Studio's SDK Manager. Pins live in `gradle/libs.versions.toml`.
 `local.properties` is not in the repo; that's the one file you have to write.
+
+### First run
+
+1. Open the app — the on-device engine is already selected.
+2. On the Engine page, tap "Download the tiny-q5_1 model" (~32 MB, once, over Wi-Fi).
+3. Hold the mic button and talk. No account, no key, and after the download no
+   network either.
 
 ## Engines
 
