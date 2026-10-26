@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ime_name">TypeWhisper</string>
+    <string name="subtype_label">TypeWhisper voice</string>
+    <string name="mic_start">Dictate</string>
+    <string name="mic_stop">Stop</string>
+    <string name="mic_release">Release to send</string>
+    <string name="state_idle">Tap Dictate to speak</string>
+    <string name="state_idle_hold">Hold to speak, let go to send</string>
+    <string name="state_listening">Listening…</string>
+    <string name="state_working">Working…</string>
+    <string name="state_error">Tap Dictate to try again</string>
+    <string name="error_failed">Dictation failed: %1$s</string>
+    <string name="error_generic">Dictation failed — tap Dictate to try again</string>
+    <string name="error_permission">TypeWhisper needs microphone permission to dictate</string>
+    <string name="error_no_engine">TypeWhisper isn\'t ready yet — open the app once and finish setup</string>
+    <string name="state_model_progress">Preparing the on-device model — %1$d%%</string>
+    <string name="copied_toast">This field can\'t accept text — transcript copied, long-press to paste</string>
+</resources>

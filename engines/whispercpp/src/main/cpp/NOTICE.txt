@@ -1,0 +1,15 @@
+Vendored native sources under engines/whispercpp/src/main/cpp
+
+whisper.cpp and ggml are bundled here (not fetched at build time) so the
+arm64-v8a shared library builds reproducibly from the repo alone.
+
+  Component   Version   Upstream
+  whisper.cpp v1.7.4    https://github.com/ggml-org/whisper.cpp
+  ggml        (in-tree, vendored inside the v1.7.4 release; no submodule)
+
+Only the CPU backend sources are vendored — the ggml GPU/BLAS/RPC backends and
+whisper's examples, bindings, tests, and model scripts are intentionally absent
+because this module does not compile them.
+
+Both projects are MIT licensed. The license text is in whisper/LICENSE and
+applies to the ggml sources as well (they share the same repository license).

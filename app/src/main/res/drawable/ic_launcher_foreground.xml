@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Microphone in its cradle: say it, and it is written. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M51,28 h6 a7,7 0 0 1 7,7 v18 a7,7 0 0 1 -7,7 h-6 a7,7 0 0 1 -7,-7 v-18 a7,7 0 0 1 7,-7 z" />
+    <path
+        android:pathData="M38,50 A16,16 0 0 0 70,50"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M54,67 L54,77"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M45,77 L63,77"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="4.5"
+        android:strokeLineCap="round" />
+</vector>
